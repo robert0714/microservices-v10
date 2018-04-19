@@ -4,7 +4,7 @@ server:
 zuul:
   ignoredServices: '*'
   prefix: /api
-  routes:
+  routes:    
     multiplications:
       path: /multiplications/**
       serviceId: multiplication
@@ -28,7 +28,7 @@ zuul:
     stats:
       path: /stats/**
       serviceId: gamification
-      strip-prefix: false
+      strip-prefix: false      
 
 endpoints:
   routes:
